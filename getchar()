@@ -1,0 +1,17 @@
+// ECHO 프로그램
+
+#include <stdio.h>
+int main(){
+    int ch;
+    for(;;){
+        ch = getchar();
+        if(ch == EOF)
+            break;
+        else putchar(ch);
+    }
+    return 0;
+}
+// getchar() 단순이 문자하나를 입력받아 아스키코드 값을 돌려줌 
+// scanf("%c", &ch); 와 동일
+// 복잡한 입력형식을 지원하지 않기 때문에 단순한 입력일 때 유리
+// 출력 중 오류가 나타나면 EOF 반환
